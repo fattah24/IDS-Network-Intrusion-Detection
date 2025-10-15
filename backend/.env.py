@@ -1,0 +1,5 @@
+IFACE=Wi-Fi
+BPF=tcp
+SYN_THRESHOLD=3
+WINDOW_SEC=10
+DATABASE_URL=sqlite:///./alerts.db

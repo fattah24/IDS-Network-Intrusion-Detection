@@ -1,0 +1,193 @@
+/* ===== Intrusion Detection Dashboard Styles ===== */
+:root {
+  --bg: #0f1117;
+  --fg: #eaeaea;
+  --accent: #4e9eff;
+  --accent2: #24e37c;
+  --danger: #ff4d4f;
+  --border: #2b2f36;
+  --muted: #999;
+  --card-bg: #161a23;
+  --font: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ---- Header / Topbar ---- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: var(--accent);
+}
+
+.status {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.status.open {
+  color: var(--accent2);
+}
+.status.error,
+.status.closed {
+  color: var(--danger);
+}
+
+/* ---- Controls Section ---- */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: var(--card-bg);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.controls .group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.3rem 0;
+}
+
+.controls label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+select {
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* ---- Buttons ---- */
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+button:hover {
+  background: #3b7ce0;
+}
+button.danger {
+  background: var(--danger);
+}
+button.danger:hover {
+  background: #d43b3d;
+}
+
+/* ---- Table ---- */
+.alerts-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.alerts-table th,
+.alerts-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.alerts-table th {
+  background: #1c212d;
+  text-align: left;
+  color: var(--accent2);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.alerts-table tbody tr:hover {
+  background: rgba(78, 158, 255, 0.08);
+}
+
+pre.small-pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.75rem;
+  margin: 0;
+  font-family: monospace;
+  background: #0f1117;
+  padding: 0.4rem;
+  border-radius: 5px;
+  color: #b5b5b5;
+}
+
+/* ---- Footer ---- */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 45%;
+    margin-bottom: 0.5rem;
+  }
+  td::before {
+    position: absolute;
+    left: 1rem;
+    width: 40%;
+    white-space: nowrap;
+    font-weight: bold;
+    color: var(--accent2);
+  }
+}
