@@ -24,7 +24,6 @@ It captures live packets, detects suspicious behavior such as **port scans**, an
 | **Frontend** | React (Vite), Fetch API, WebSockets |
 | **Database** | SQLite |
 | **Language** | Python 3.13, JavaScript (ES6+) |
-
 ---
 
 ## 📸 Screenshots
