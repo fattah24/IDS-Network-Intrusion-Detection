@@ -12,7 +12,7 @@ It captures live packets, detects suspicious behavior such as **port scans**, an
 - 💾 **SQLite** database for persistent alert storage  
 - 🧩 **React dashboard** with pause, refresh, and clear controls  
 - 📱 Responsive dark-themed interface  
-- 🧠 Designed for students and cybersecurity learners  
+ 
 
 ---
 
@@ -24,32 +24,6 @@ It captures live packets, detects suspicious behavior such as **port scans**, an
 | **Frontend** | React (Vite), Fetch API, WebSockets |
 | **Database** | SQLite |
 | **Language** | Python 3.13, JavaScript (ES6+) |
-
----
-
-## 📂 Folder Structure
-NetworkIntrusionDetection/
-│
-├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── capture.py
-│ │ ├── models.py
-│ │ ├── detectors/
-│ │ │ └── portscan.py
-│ │ └── websocket_manager.py
-│ └── alerts.db
-│
-├── frontend/
-│ ├── src/
-│ │ ├── App.jsx
-│ │ └── index.css
-│ └── package.json
-│
-└── README.md
-
-yaml
-Copy code
 
 ---
 
