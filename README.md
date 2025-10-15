@@ -26,22 +26,40 @@ It captures live packets, detects suspicious behavior such as **port scans**, an
 | **Language** | Python 3.13, JavaScript (ES6+) |
 
 ---
+
+## 📂 Folder Structure
 NetworkIntrusionDetection/
 │
 ├── backend/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── capture.py
-│   │   ├── models.py
-│   │   ├── detectors/
-│   │   │   └── portscan.py
-│   │   └── websocket_manager.py
-│   └── alerts.db
+│ ├── app/
+│ │ ├── main.py
+│ │ ├── capture.py
+│ │ ├── models.py
+│ │ ├── detectors/
+│ │ │ └── portscan.py
+│ │ └── websocket_manager.py
+│ └── alerts.db
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   └── index.css
-│   └── package.json
+│ ├── src/
+│ │ ├── App.jsx
+│ │ └── index.css
+│ └── package.json
 │
 └── README.md
+
+yaml
+Copy code
+
+---
+
+## 📸 Screenshots
+
+### ⚠️ Live Alerts in Action  
+![Live Alerts](frontend/public/live_alerts.png)
+
+### 📊 System Status & Health Endpoint  
+![System Health](frontend/public/system_health.png)
+
+---
+
