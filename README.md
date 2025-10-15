@@ -12,7 +12,7 @@ It captures live packets, detects suspicious behavior such as **port scans**, an
 - 💾 **SQLite** database for persistent alert storage  
 - 🧩 **React dashboard** with pause, refresh, and clear controls  
 - 📱 Responsive dark-themed interface  
-- 🧠 Designed for students and cybersecurity learners  
+ 
 
 ---
 
@@ -47,9 +47,6 @@ NetworkIntrusionDetection/
 │ └── package.json
 │
 └── README.md
-
-yaml
-Copy code
 
 ---
 
